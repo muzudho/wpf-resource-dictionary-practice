@@ -12,5 +12,16 @@
         <Setter Property="Background" Value="{DynamicResource normalButtonColor}"/>
         <Setter Property="BorderBrush" Value="Blue"/>
     </Style>
-    
+
+    <Style x:Key="sorrowButton" TargetType="{x:Type Button}">
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Foreground" Value="Blue"/>
+                <Setter Property="Background" Value="SkyBlue"/>
+                <Setter Property="BorderBrush" Value="Violet"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
 </ResourceDictionary>

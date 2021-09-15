@@ -13,20 +13,9 @@
         <Button Width="300" Height="50" FontSize="20"
                 Content="２個目のボタン"
                 Foreground="Brown" Background="Pink" BorderBrush="Purple" />
+        
         <Button Width="300" Height="50" FontSize="20"
-                Content="３個目のボタン">
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Cursor" Value="Hand"/>
-                            <Setter Property="Foreground" Value="Blue"/>
-                            <Setter Property="Background" Value="SkyBlue"/>
-                            <Setter Property="BorderBrush" Value="Violet"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
+                Content="３個目のボタン" Style="{DynamicResource sorrowButton}">
         </Button>
 
     </StackPanel>
