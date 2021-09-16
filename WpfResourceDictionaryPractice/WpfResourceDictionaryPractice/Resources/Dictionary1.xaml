@@ -24,4 +24,14 @@
         </Style.Triggers>
     </Style>
 
+    <ControlTemplate x:Key="circleButton" TargetType="Button">
+        <Grid>
+            <!-- サイズいっぱいの大きさの楕円 -->
+            <Ellipse Fill="YellowGreen" Stroke="Green" />
+            
+            <!-- Content はこれで設定します -->
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+    </ControlTemplate>
+    
 </ResourceDictionary>

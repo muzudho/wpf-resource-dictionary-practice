@@ -18,6 +18,10 @@
                 Content="３個目のボタン" Style="{DynamicResource sorrowButton}">
         </Button>
 
+        <Button Width="300" Height="50" FontSize="20"
+                Content="４個目のボタン" Template="{DynamicResource circleButton}">
+        </Button>
+
     </StackPanel>
 
 </Window>
