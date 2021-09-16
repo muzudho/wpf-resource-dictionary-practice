@@ -33,5 +33,15 @@
             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Grid>
     </ControlTemplate>
-    
+
+    <ControlTemplate x:Key="colorCircleButton" TargetType="Button">
+        <Grid>
+            <!-- サイズいっぱいの大きさの楕円 -->
+            <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
+
+            <!-- Content はこれで設定します -->
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+    </ControlTemplate>
+
 </ResourceDictionary>
